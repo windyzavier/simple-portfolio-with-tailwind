@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO Meta Tags -->
+    <title>Windy Zaviera | IT Student Portfolio - Web Developer & SEO Specialist</title>
+    <meta
+      name="description"
+      content="Windy Zaviera - IT student at State Vocational High School 47 South Jakarta. Expert in HTML5, CSS3, JavaScript, Tailwind CSS, and SEO digital marketing. View my web development portfolio and projects."
+    />
+    <meta
+      name="keywords"
+      content="Windy Zaviera, IT Student, Web Developer, Portfolio, HTML5, CSS3, JavaScript, Tailwind CSS, SEO Digital Marketing, State Vocational High School 47, Frontend Developer"
+    />
+    <meta name="author" content="Windy Zaviera" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="English" />
+    <meta name="revisit-after" content="7 days" />
+
+    <!-- Open Graph Tags (Social Media) -->
+    <meta property="og:title" content="Windy Zaviera | IT Student Portfolio" />
+    <meta property="og:description" content="Portfolio of Windy Zaviera, IT student specializing in web development, JavaScript, and SEO." />
+    <meta property="og:image" content="https://s6.imgcdn.dev/YUCQma.jpg" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://your-portfolio-domain.com" />
+    <meta property="og:site_name" content="Windy Zaviera Portfolio" />
+
+    <!-- Twitter Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Windy Zaviera | IT Student Portfolio" />
+    <meta name="twitter:description" content="Web Developer & SEO Specialist - Check out my latest projects" />
+    <meta name="twitter:image" content="https://s6.imgcdn.dev/YUCQma.jpg" />
+
+    <!-- Canonical Tag -->
+    <link rel="canonical" href="https://your-portfolio-domain.com" />
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- SweetAlert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- Favicon -->
+    <link rel="icon" href="https://s6.imgcdn.dev/YUCQma.jpg" type="image/jpeg">
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Windy Zaviera",
+      "url": "https://your-portfolio-domain.com",
+      "image": "https://s6.imgcdn.dev/YUCQma.jpg",
+      "sameAs": [
+        "https://www.instagram.com/riirn_fatimh/",
+        "https://x.com/ririnfatma3"
+      ],
+      "jobTitle": "IT Student & Web Developer",
+      "affiliation": {
+        "@type": "EducationalOrganization",
+        "name": "State Vocational High School 47 South Jakarta"
+      },
+      "email": "windy.zaviera@email.com",
+      "description": "IT student specializing in web development, JavaScript, and SEO digital marketing"
+    }
+    </script>
+
+    <!-- Custom CSS for Animations -->
+    <style>
+      @keyframes runningText {
+        0% {
+          transform: translateX(100%);
+        }
+        100% {
+          transform: translateX(-100%);
+        }
+      }
+
+      .skills-container {
+        width: 100%;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        min-height: 300px;
+      }
+
+      .skills-wrapper {
+        display: flex;
+        gap: 1.5rem;
+        animation: runningText 40s linear infinite;
+        width: max-content;
+      }
+
+      .skills-wrapper:hover {
+        animation-play-state: paused;
+      }
+
+      .skill-card {
+        transition: all 0.3s ease;
+        filter: grayscale(100%);
+        cursor: pointer;
+        flex-shrink: 0;
+        width: 200px;
+      }
+
+      .skill-card:hover {
+        filter: grayscale(0%);
+      }
+    </style>
+  <body class="bg-gray-50 text-gray-800 leading-relaxed">
+    <!-- Header -->
+    <header
+      class="bg-gradient-to-r from-blue-600 to-blue-800 text-white shadow-lg fixed w-full z-50"
+    >
+      <div
+        class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center"
+      >
+        <div class="flex items-center gap-3">
+          <img
+            src="https://s6.imgcdn.dev/YUCQma.jpg"
+            alt="Windy Zaviera"
+            class="w-10 h-10 rounded-full border-2 border-white object-cover"
+          />
+          <h1 class="font-bold text-2xl">Windy Zaviera</h1>
+        </div>
+        <nav class="space-x-6 hidden md:block">
+          <a href="#about" class="hover:text-blue-200 transition">About</a>
+          <a href="#school" class="hover:text-blue-200 transition">School</a>
+          <a href="#skills" class="hover:text-blue-200 transition">Skills</a>
+          <a href="#timeline" class="hover:text-blue-200 transition"
+            >Timeline</a
+          >
+          <a href="#contact" class="hover:text-blue-200 transition">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+      class="pt-40 pb-24 bg-gradient-to-b from-blue-50 via-white to-blue-50"
+    >
+      <div
+        class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center"
+      >
+        <div data-aos="fade-right">
+          <div
+            class="mb-4 inline-block bg-blue-100 px-4 py-2 rounded-full text-blue-700 text-sm font-semibold"
+          >
+            👋 Welcome
+          </div>
+          <h1 class="text-5xl font-bold mb-6 text-gray-900">
+            Hi, I'm Windy Zaviera
+          </h1>
+          <p class="text-lg mb-8 text-gray-700 leading-relaxed">
+            IT Student at
+            <strong class="text-blue-700">State Vocational High School 47 South Jakarta</strong>
+            passionate about web development, SEO, and cutting-edge frontend
+            technologies.
+          </p>
+          <div class="flex gap-4">
+            <button
+              onclick="showAlert()"
+              class="bg-blue-600 text-white px-8 py-4 rounded-lg shadow-lg hover:bg-blue-700 transition transform hover:scale-105 font-semibold"
+              aria-label="Let's Connect Button"
+            >
+              Let's Connect
+            </button>
+            <button
+              onclick="scrollToSection('contact')"
+              class="border-2 border-blue-600 text-blue-600 px-8 py-4 rounded-lg hover:bg-blue-50 transition font-semibold"
+              aria-label="Contact Me Button"
+            >
+              Contact Me
+            </button>
+          </div>
+        </div>
+        <div class="flex justify-center" data-aos="fade-left">
+          <img
+            src="https://s6.imgcdn.dev/YUCQma.jpg"
+            alt="Windy Zaviera - IT Student Profile Photo"
+            class="rounded-2xl shadow-2xl w-72 h-72 object-cover border-4 border-blue-200 hover:shadow-3xl transition duration-300"
+            loading="lazy"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="py-24 bg-white">
+      <div class="max-w-4xl mx-auto px-6 text-center" data-aos="fade-up">
+        <h2 class="text-4xl font-bold mb-6 text-gray-900">About Me</h2>
+        <div
+          class="bg-gradient-to-r from-blue-50 to-purple-50 p-8 rounded-xl border-l-4 border-blue-600"
+        >
+          <p class="text-lg text-gray-700 leading-relaxed">
+            I'm an IT student passionate about creating beautiful and functional
+            web experiences. With experience in SEO digital marketing and modern
+            web technologies, I'm constantly learning and growing as a
+            developer. My goal is to combine design and functionality to create
+            solutions that make a real impact.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- School Information -->
+    <section
+      id="school"
+      class="py-24 bg-gradient-to-r from-blue-50 to-purple-50"
+    >
+      <div class="max-w-5xl mx-auto px-6" data-aos="fade-up">
+        <h2 class="text-4xl font-bold mb-12 text-center text-gray-900">
+          My School
+        </h2>
+        <div class="grid md:grid-cols-2 gap-8">
+          <!-- SMAN 11 Card -->
+          <div
+            class="relative group h-80 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition cursor-pointer"
+          >
+            <img
+              src="https://patriotnusantaranews.com/wp-content/uploads/2025/01/IMG-20250115-WA0014.jpg"
+              alt="SMAN 11 Kabupaten Tangerang - Senior High School"
+              class="w-full h-full object-cover group-hover:scale-110 transition duration-300"
+              loading="lazy"
+            />
+            <div
+              class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-70 transition duration-300 flex items-center justify-center"
+            >
+              <div
+                class="text-white text-center opacity-0 group-hover:opacity-100 transition duration-300 px-6"
+              >
+                <h3 class="text-2xl font-bold mb-4">
+                  🏫 Public Junior High School 96, South Jakarta
+                </h3>
+                <div class="space-y-2 text-sm">
+                  <p><strong>Graduation Year:</strong> 2023</p>
+                  <p>
+                    <strong>Location:</strong> South Jakarta, Indonesia
+                  </p>
+                  <p><strong>Achievement:</strong> Excellent academic record</p>
+                  <p class="leading-relaxed mt-3">
+                    A state senior high school that provided a strong foundation
+                    in academics and character development. Developed interests
+                    in technology and digital innovation.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- STMIK PGRI Card -->
+          <div
+            class="relative group h-80 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition cursor-pointer"
+          >
+            <img
+              src="https://s6.imgcdn.dev/YU4DlD.jpg"
+              alt="STMIK PGRI Tangerang - Information Technology University"
+              class="w-full h-full object-cover group-hover:scale-110 transition duration-300"
+              loading="lazy"
+            />
+            <div
+              class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-70 transition duration-300 flex items-center justify-center"
+            >
+              <div
+                class="text-white text-center opacity-0 group-hover:opacity-100 transition duration-300 px-6"
+              >
+                <h3 class="text-2xl font-bold mb-4">🎓 State Vocational High School 47 South Jakarta</h3>
+                <div class="space-y-2 text-sm">
+                  <p><strong>Current Status:</strong> Active Student (2025)</p>
+                  <p><strong>Program:</strong> Information Technology</p>
+                  <p>
+                    <strong>Focus:</strong> Web Development & Digital Technology
+                  </p>
+                  <p class="leading-relaxed mt-3">
+                    Pursuing a degree in IT with focus on web development.
+                    Equipped with practical skills in modern programming
+                    languages, frameworks, and web technologies.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="py-24 bg-gradient-to-b from-white to-gray-50">
+      <div class="max-w-6xl mx-auto px-6" data-aos="fade-up">
+        <h2 class="text-4xl font-bold mb-4 text-center">Tech Stack</h2>
+        <p class="text-center text-gray-600 mb-12 text-lg">
+          Technologies & tools I work with
+        </p>
+        <div class="skills-container">
+          <div class="skills-wrapper">
+            <!-- HTML -->
+            <div class="skill-card p-6 bg-white rounded-xl shadow hover:shadow-lg transition transform hover:scale-105 text-center border-t-4 border-blue-600">
+              <div class="h-16 mb-3 flex items-center justify-center">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/500px-HTML5_logo_and_wordmark.svg.png"
+                  alt="HTML5"
+                  class="h-full object-contain"
+                />
+              </div>
+              <span class="font-semibold text-gray-800">HTML</span>
+            </div>
+
+            <!-- CSS -->
+            <div class="skill-card p-6 bg-white rounded-xl shadow hover:shadow-lg transition transform hover:scale-105 text-center border-t-4 border-purple-600">
+              <div class="h-16 mb-3 flex items-center justify-center">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1452px-CSS3_logo_and_wordmark.svg.png"
+                  alt="CSS3"
+                  class="h-full object-contain"
+                />
+              </div>
+              <span class="font-semibold text-gray-800">CSS</span>
+            </div>
+
+            <!-- Tailwind CSS -->
+            <div class="skill-card p-6 bg-white rounded-xl shadow hover:shadow-lg transition transform hover:scale-105 text-center border-t-4 border-cyan-600">
+              <div class="h-16 mb-3 flex items-center justify-center">
+                <img
+                  src="https://brandlogos.net/wp-content/uploads/2023/11/tailwind_css-logo_brandlogos.net_v91ni.png"
+                  alt="Tailwind CSS"
+                  class="h-full object-contain"
+                />
+              </div>
+              <span class="font-semibold text-gray-800">Tailwind CSS</span>
+            </div>
+
+            <!-- JavaScript -->
+            <div class="skill-card p-6 bg-white rounded-xl shadow hover:shadow-lg transition transform hover:scale-105 text-center border-t-4 border-yellow-600">
+              <div class="h-16 mb-3 flex items-center justify-center">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1024px-Unofficial_JavaScript_logo_2.svg.png"
+                  alt="JavaScript"
+                  class="h-full object-contain"
+                />
+              </div>
+              <span class="font-semibold text-gray-800">JavaScript</span>
+            </div>
+
+            <!-- SweetAlert -->
+            <div class="skill-card p-6 bg-white rounded-xl shadow hover:shadow-lg transition transform hover:scale-105 text-center border-t-4 border-pink-600">
+              <div class="h-16 mb-3 flex items-center justify-center">
+                <img
+                  src="https://meta-q.cdn.bubble.io/cdn-cgi/image/w=64,h=64,f=auto,dpr=2.5,fit=contain/f1715808813810x200336089501440320/favicon.png"
+                  alt="SweetAlert"
+                  class="h-full object-contain"
+                />
+              </div>
+              <span class="font-semibold text-gray-800">SweetAlert</span>
+            </div>
+
+            <!-- AOS Animate -->
+            <div class="skill-card p-6 bg-white rounded-xl shadow hover:shadow-lg transition transform hover:scale-105 text-center border-t-4 border-green-600">
+              <div class="h-16 mb-3 flex items-center justify-center">
+                <img
+                  src="https://www.drupal.org/files/project-images/Drupal-AOSJS-Animate-On-Scroll-Javascript-Library.png"
+                  alt="AOS Animate"
+                  class="h-full object-contain"
+                />
+              </div>
+              <span class="font-semibold text-gray-800">AOS Animate</span>
+            </div>
+
+            <!-- DUPLICATE: HTML -->
+            <div class="skill-card p-6 bg-white rounded-xl shadow hover:shadow-lg transition transform hover:scale-105 text-center border-t-4 border-blue-600">
+              <div class="h-16 mb-3 flex items-center justify-center">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/500px-HTML5_logo_and_wordmark.svg.png"
+                  alt="HTML5"
+                  class="h-full object-contain"
+                />
+              </div>
+              <span class="font-semibold text-gray-800">HTML</span>
+            </div>
+
+            <!-- DUPLICATE: CSS -->
+            <div class="skill-card p-6 bg-white rounded-xl shadow hover:shadow-lg transition transform hover:scale-105 text-center border-t-4 border-purple-600">
+              <div class="h-16 mb-3 flex items-center justify-center">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1452px-CSS3_logo_and_wordmark.svg.png"
+                  alt="CSS3"
+                  class="h-full object-contain"
+                />
+              </div>
+              <span class="font-semibold text-gray-800">CSS</span>
+            </div>
+
+            <!-- DUPLICATE: Tailwind CSS -->
+            <div class="skill-card p-6 bg-white rounded-xl shadow hover:shadow-lg transition transform hover:scale-105 text-center border-t-4 border-cyan-600">
+              <div class="h-16 mb-3 flex items-center justify-center">
+                <img
+                  src="https://brandlogos.net/wp-content/uploads/2023/11/tailwind_css-logo_brandlogos.net_v91ni.png"
+                  alt="Tailwind CSS"
+                  class="h-full object-contain"
+                />
+              </div>
+              <span class="font-semibold text-gray-800">Tailwind CSS</span>
+            </div>
+
+            <!-- DUPLICATE: JavaScript -->
+            <div class="skill-card p-6 bg-white rounded-xl shadow hover:shadow-lg transition transform hover:scale-105 text-center border-t-4 border-yellow-600">
+              <div class="h-16 mb-3 flex items-center justify-center">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1024px-Unofficial_JavaScript_logo_2.svg.png"
+                  alt="JavaScript"
+                  class="h-full object-contain"
+                />
+              </div>
+              <span class="font-semibold text-gray-800">JavaScript</span>
+            </div>
+
+            <!-- DUPLICATE: SweetAlert -->
+            <div class="skill-card p-6 bg-white rounded-xl shadow hover:shadow-lg transition transform hover:scale-105 text-center border-t-4 border-pink-600">
+              <div class="h-16 mb-3 flex items-center justify-center">
+                <img
+                  src="https://meta-q.cdn.bubble.io/cdn-cgi/image/w=64,h=64,f=auto,dpr=2.5,fit=contain/f1715808813810x200336089501440320/favicon.png"
+                  alt="SweetAlert"
+                  class="h-full object-contain"
+                />
+              </div>
+              <span class="font-semibold text-gray-800">SweetAlert</span>
+            </div>
+
+            <!-- DUPLICATE: AOS Animate -->
+            <div class="skill-card p-6 bg-white rounded-xl shadow hover:shadow-lg transition transform hover:scale-105 text-center border-t-4 border-green-600">
+              <div class="h-16 mb-3 flex items-center justify-center">
+                <img
+                  src="https://www.drupal.org/files/project-images/Drupal-AOSJS-Animate-On-Scroll-Javascript-Library.png"
+                  alt="AOS Animate"
+                  class="h-full object-contain"
+                />
+              </div>
+              <span class="font-semibold text-gray-800">AOS Animate</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Timeline -->
+    <section id="timeline" class="py-24 bg-gradient-to-b from-gray-50 to-white">
+      <div class="max-w-4xl mx-auto px-6">
+        <h2 class="text-4xl font-bold mb-4 text-center" data-aos="fade-up">
+          Education & Experience
+        </h2>
+        <p class="text-center text-gray-600 mb-16 text-lg">My journey so far</p>
+        <div class="relative">
+          <div
+            class="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 w-1 h-full bg-gradient-to-b from-blue-600 to-purple-600"
+          ></div>
+
+          <div
+            class="mb-12 md:mb-16 md:w-1/2 md:ml-auto md:pl-12 md:pr-0 pl-12"
+            data-aos="fade-right"
+          >
+            <div
+              class="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 -translate-x-1/2 w-8 h-8 bg-blue-600 rounded-full border-4 border-white shadow-lg"
+            ></div>
+            <div
+              class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition border-l-4 border-blue-600"
+            >
+              <h4 class="font-bold text-xl text-blue-700 mb-2">
+                2023 – Public Junior High School 96, South Jakarta
+              </h4>
+              <p class="text-gray-700">
+                🎓 Graduated from junior high school with excellent grades.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="mb-12 md:mb-16 md:w-1/2 md:mr-auto md:pr-12 md:pl-0 pl-12"
+            data-aos="fade-left"
+          >
+            <div
+              class="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 -translate-x-1/2 w-8 h-8 bg-purple-600 rounded-full border-4 border-white shadow-lg"
+            ></div>
+            <div
+              class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition border-l-4 border-purple-600"
+            >
+              <h4 class="font-bold text-xl text-purple-700 mb-2">
+                2024 – Gap Year
+              </h4>
+              <p class="text-gray-700">
+                💼 Worked as SEO Digital Marketing at CV Solusi Klik. Gained
+                practical experience in digital marketing.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="md:w-1/2 md:ml-auto md:pl-12 md:pr-0 pl-12"
+            data-aos="fade-right"
+          >
+            <div
+              class="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 -translate-x-1/2 w-8 h-8 bg-green-600 rounded-full border-4 border-white shadow-lg"
+            ></div>
+            <div
+              class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition border-l-4 border-green-600"
+            >
+              <h4 class="font-bold text-xl text-green-700 mb-2">
+                2025 – State Vocational High School 47 South Jakarta
+              </h4>
+              <p class="text-gray-700">
+                🎯 Currently studying Information Technology, focusing on web
+                development.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section
+      id="contact"
+      class="py-24 bg-gradient-to-r from-blue-600 to-blue-800 text-white"
+    >
+      <div class="max-w-4xl mx-auto px-6 text-center" data-aos="fade-up">
+        <h2 class="text-4xl font-bold mb-8">Get In Touch</h2>
+        <p class="mb-8 text-blue-100 text-lg">
+          I'd love to hear from you! Feel free to reach out.
+        </p>
+        <div class="space-y-4">
+          <p class="text-xl">
+            📧 <strong>Email:</strong>
+            <a
+              href="mailto:windy.zaviera@email.com"
+              class="hover:text-blue-200 transition"
+              >windy.zaviera@email.com</a
+            >
+          </p>
+          <p class="text-lg text-blue-100">
+            Instagram & X available on request
+          </p>
+        </div>
+        <button
+          onclick="scrollToTop()"
+          class="mt-8 bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold shadow-lg hover:bg-blue-50 transition"
+        >
+          Back to Top ⬆️
+        </button>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 text-center text-sm text-gray-600 bg-gray-100">
+      <p class="mb-2">
+        © 2025 <strong>Windy Zaviera</strong>. All rights reserved.
+      </p>
+      <p class="text-xs text-gray-500">
+        Built with ❤️ using HTML, Tailwind CSS & JavaScript
+      </p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({ once: true, duration: 800 });
+
+      function showAlert() {
+        Swal.fire({
+          title: "Hello 👋",
+          text: "Thanks for visiting my portfolio! Feel free to reach out.",
+          icon: "success",
+          confirmButtonText: "Nice!",
+          confirmButtonColor: "#2563eb",
+        });
+      }
+
+      function scrollToSection(sectionId) {
+        const element = document.getElementById(sectionId);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" });
+        }
+      }
+
+      function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+
+      // Smooth scroll for all anchor links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            target.scrollIntoView({ behavior: "smooth" });
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
